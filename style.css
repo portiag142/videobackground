@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+    /*box-sizing:borser-box includes padding and border when setting a width or height*/
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+h1{
+    font-weight:400;
+    font-size:60px;
+    line-height: 1;
+    margin-bottom:20px;
+}
+a{
+    /* Removes the underline on a link*/
+    text-decoration:none;
+    color: rgb(202, 255, 55);
+}
+#main{
+
+    position: relative;
+    /* VH viewport height determibnes the height of the element by setting it to a percentage of the viewport (NOTE: VW is uded for WIDTH)*/
+
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    /*OR same as setting certer to justify-content and align-items "place-items:center;*/
+    /* So the text does NOT go right uop against the edge on smaller screen sizes*/
+    padding: 0 20px;
+}
+
+#video-container{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-image: url(cover.png);
+}
